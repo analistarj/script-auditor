@@ -1,37 +1,24 @@
-# script-auditor
+# S3Scanner, cópia de estudo
 
-Automated audit scripts for IT controls and compliance.
+> O código atual deste repositório identifica Dan Salmon, [sa7mon](https://github.com/sa7mon), como autor original.
 
-## Overview
+Este repositório não contém uma suíte autoral de Auditoria de TI. Ele preserva uma versão antiga do projeto [sa7mon/S3Scanner](https://github.com/sa7mon/S3Scanner) para referência e estudo de identificação de buckets S3 expostos.
 
-This repository contains a collection of Python scripts designed to automate common IT audit tasks, including:
+## Transparência de autoria
 
-- Security control verification
-- Log analysis and anomaly detection
-- Compliance checks (e.g., ITGC, SOX, ISO 27001)
-- Reporting of findings in human readable formats
+- autor original indicado no código: Dan Salmon;
+- projeto upstream: [sa7mon/S3Scanner](https://github.com/sa7mon/S3Scanner);
+- alterações autorais relevantes de Alan Nogueira: nenhuma identificada nesta versão;
+- status: cópia de estudo, não mantida e não recomendada para produção.
 
-These tools support auditors and security professionals in streamlining repetitive tasks and improving audit coverage.
+O repositório foi retirado da apresentação de projetos autorais do perfil.
 
-## Requirements
+## Segurança
 
-- Python 3.8+
-- Required libraries are listed in `requirements.txt` (to be created). The main dependencies include pandas, requests and other auditing packages.
+Ferramentas de enumeração de buckets só devem ser executadas contra ambientes próprios ou com autorização formal. Não faça download de objetos, enumeração ou testes em recursos de terceiros sem permissão.
 
-## Usage
+O script atual é antigo, não possui testes ou CI e pode depender de bibliotecas e comportamentos desatualizados. Consulte o projeto upstream para versões mantidas.
 
-Clone the repository and run the desired script from the command line, for example:
+## Licença
 
-```bash
-python scriptbucket.py --help
-```
-
-Each script includes command line arguments and documentation. Refer to the comments inside each file for details on input parameters and output.
-
-## Contributing
-
-Contributions are welcome! Please open an issue to discuss proposed changes or new audit scenarios. Feel free to submit pull requests with additional scripts, bug fixes or improvements.
-
-## License
-
-[MIT](LICENSE)
+O cabeçalho do código preservado menciona uma licença histórica diferente da licença atualmente publicada pelo upstream. Antes de reutilizar, modificar ou distribuir esse código, confirme a versão de origem e as condições aplicáveis diretamente no [repositório original](https://github.com/sa7mon/S3Scanner).
